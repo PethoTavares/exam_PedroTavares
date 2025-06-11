@@ -1,7 +1,5 @@
 # Personal Portfolio Website
 
-!(./images/Portfolio_Picture.png)
-
 ## Description
 A responsive personal portfolio website showcasing my skills, projects, and contact information. Built with semantic HTML5, modern CSS3. The design features clean aesthetics with thoughtful animations and responsive layouts that work across all device sizes.
 
