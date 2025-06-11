@@ -128,6 +128,71 @@ h2::after {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* GitHub Section Styles */
+#github {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+#github h2::after {
+    display: none;
+}
+
+.github-profile {
+    margin-top: 1rem;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background-color: #333; /* GitHub's dark color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+}
+
+.github-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #4078c0; /* GitHub's blue */
+    border-color: #4078c0;
+}
+
+.github-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.github-link:hover .github-icon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.github-text {
+    position: relative;
+    padding-right: 10px;
+}
+
+.github-text::after {
+    content: '→';
+    position: absolute;
+    right: -15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.github-link:hover .github-text::after {
+    right: -20px;
+    opacity: 1;
+}
+
 /*  Contact Section Styles  */
 #contact form {
     display: grid;
