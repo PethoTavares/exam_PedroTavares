@@ -1,3 +1,4 @@
+/* ===== CSS Reset & Base Styles ===== */
 * {
     margin: 0;
     padding: 0;
@@ -11,19 +12,18 @@ body {
     background-color: #f5f7fa;
 }
 
-/*  Color Scheme  */
-
+/* ===== Color Scheme ===== */
 :root {
     --primary: #2c3e50;
     --secondary: #3498db;
+    --accent: #e74c3c;
     --light: #ecf0f1;
     --dark: #2c3e50;
     --text: #333;
     --text-light: #7f8c8d;
 }
 
-/*  Header Styles  */
-
+/* ===== Header Styles ===== */
 header {
     background-color: var(--primary);
     color: white;
@@ -38,8 +38,7 @@ header h1 {
     letter-spacing: 1px;
 }
 
-/* Navigation Styles  */
-
+/* ===== Navigation Styles ===== */
 nav {
     margin-top: 1rem;
 }
@@ -60,9 +59,12 @@ nav a {
     transition: all 0.3s ease;
 }
 
+nav a:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+}
 
-/* Main Content Styles */
-
+/* ===== Main Content Styles ===== */
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -95,17 +97,17 @@ h2::after {
     background-color: var(--secondary);
 }
 
-/*  About Section Styles  */
+/* ===== About Section Styles ===== */
 #about p {
     margin-bottom: 1rem;
     color: var(--text);
     line-height: 1.7;
 }
 
-/*  Skills Section Styles  */
+/* ===== Skills Section Styles ===== */
 #skills ul {
     display: grid;
-  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     list-style: none;
 }
@@ -121,8 +123,12 @@ h2::after {
     border-left: 4px solid var(--secondary);
 }
 
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
-/*  Contact Section Styles  */
+/* ===== Contact Section Styles ===== */
 #contact form {
     display: grid;
     gap: 1.5rem;
@@ -175,10 +181,20 @@ button[type="reset"] {
     color: var(--text);
 }
 
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
 
+button[type="reset"]:hover {
+    background-color: #bdc3c7;
+}
 
-/*  Footer Styles  */
+/* ===== Footer Styles ===== */
 footer {
     background-color: var(--primary);
     color: white;
@@ -186,4 +202,3 @@ footer {
     padding: 1.5rem 0;
     margin-top: 3rem;
 }
-
